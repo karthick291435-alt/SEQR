@@ -1,0 +1,1 @@
+{% extends 'base.html' %}{% block auth_content %}<div class="error-page"><span class="eyebrow">SYSTEM RESPONSE</span><strong>{{ code }}</strong><h1>{{ message }}</h1><a href="{{ url_for('dashboard') if current_user.is_authenticated else url_for('login') }}" class="btn btn-primary">Return to safety</a></div>{% endblock %}
