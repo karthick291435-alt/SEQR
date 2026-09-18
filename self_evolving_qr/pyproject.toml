@@ -1,2 +1,10 @@
+[project]
+name = "seqr"
+version = "0.1.0"
+description = "Flask application"
+requiress-python = ">3.12,<3.14"
+dependecies = [
+  "flask>=3.0.0",
+]
 [tool.vercel]
 entrypoint = "run:app"
